@@ -1,0 +1,65 @@
+#title{
+	text-align: center;
+	margin-top: 30px;
+}
+
+#instru{
+	margin: 0 auto;
+	width: 850px;
+	text-align: left;
+}
+
+#select{
+	height: 10px;
+}
+
+#content{
+	float: top;
+	width: 850px;
+	margin: 0 auto;
+}
+
+#videos, #select{
+	float: top;
+}
+
+#videos, #btns, #info{
+	overflow: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#left_video, #right_video{
+	width: 360px;
+	height: 400px;
+}
+
+
+#left_video, #start_btn, #fname_list, #compare_name, #left_select, #right_select{
+	float: left;
+}
+
+#submit{
+	float: top;
+}
+
+#compare_name{
+  width:160px;
+  display: inline-block;
+}
+
+#right_video, #next_btn, #dataset, #right_select{
+	float: right;
+}
+
+#file_name, #result_qual, #result_sync, #result_natu{
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+

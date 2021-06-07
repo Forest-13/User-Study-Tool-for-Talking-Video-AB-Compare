@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>User Study</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <script type="text/javascript" src="./function.js" ></script>
+	</head>
+ 
+	<body>
+		<div id='title'>
+        	<h1>User Study</h1>  
+        </div>
+        <div id='instru'>
+				<label>1. 单击"Start"按钮开始测试</label><br>
+				<label>2. 先观看视频, 在视频下面3行分别对视频的视觉质量, 音画同步, 视频的流畅程度比较</label><br>
+				<label>3. 感觉左边和右边的三方面的比较哪个好就选择哪个</label><br>
+				<label>4. 每对一个视频的3项比较后点击"Next"按键进入下一个视频的评分</label><br>
+				<label>5. 最下面的"进度"显示了User Study的进度</label>
+			</div>
+        <div id='content'>
+        	<div id='videos'>
+        		<video id='left_video' type="video/mp4" controls></video>
+                <video id='right_video' type="video/mp4" controls></video>
+        	</div>
+            <div id='select'>
+				<div id='compare_name'><label>视觉质量: </label></div>
+                <div id='left_select'>
+                    <input type="radio" id="left_sub" class='select_radio' name='qual' onclick='cur_qual("left")' />
+                    <label>The left one is better</label>
+                </div>
+                <div id='right_select'>
+                    <input type="radio" id="right_sub" class='select_radio' name='qual' onclick='cur_qual("right")' />
+                    <label>The right one is better</label>
+                </div>
+            </div><br>
+			<div id='select'>
+				<div id='compare_name'><label id='compare_name'>音画同步: </label></div>
+                <div id='left_select'>
+                    <input type="radio" id="left_sub" class='select_radio' name='sync' onclick='cur_sync("left")' />
+                    <label>The left one is better</label>
+                </div>
+                <div id='right_select'>
+                    <input type="radio" id="right_sub" class='select_radio' name='sync' onclick='cur_sync("right")' />
+                    <label>The right one is better</label>
+                </div>
+            </div><br>
+			<div id='select'>
+				<div id='compare_name'><label id='compare_name'>流畅程度: </label></div>
+                <div id='left_select'>
+                    <input type="radio" id="left_sub" class='select_radio' name='natu' onclick='cur_natu("left")' />
+                    <label>The left one is better</label>
+                </div>
+                <div id='right_select'>
+                    <input type="radio" id="right_sub" class='select_radio' name='natu' onclick='cur_natu("right")' />
+                    <label>The right one is better</label>
+                </div>
+            </div>
+            <div id='btns'>
+                <button id='start_btn' onclick='start()'>Start</button>
+                <button id='next_btn' onclick='next()'>Next</button>
+            </div>
+            <div id='info'>
+                <div id='progress'>Progress: 0%</div>
+                <div id='file_name'>File name: </div>
+				<div id='result_qual'>Quality: </div>
+                <div id='result_sync'>Sync: </div>
+                <div id='result_natu'>Natural: </div>
+            </div>
+        </div>
+	</body>
+ 
+</html>
